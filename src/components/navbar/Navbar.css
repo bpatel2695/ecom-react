@@ -4,12 +4,14 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
-    margin:auto
+    margin:auto;
+    background-color:  #b7473f;
   }
 
   .title {
     margin-left: 20px;
     font-size: 35px;
+    color: white;
 
   }
   
@@ -17,6 +19,7 @@
     margin-right: 20px;
     display: flex;
     align-items: center;
+    color: white;
 
   }
   
@@ -24,6 +27,7 @@
     text-decoration: none;
     margin-left: 20px;
     font-size: 25px;
+    color: white;
   }
 
   .links a:hover{

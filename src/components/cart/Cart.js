@@ -60,7 +60,7 @@ export default function Cart() {
                   return (
                     <tr key={elem.id} ClassName="Cart-items">
                       <td className="Cart-item-name">{elem.name}</td>
-                      <td className="Cart-item-cells">₹{elem.price}</td>
+                      <td className="Cart-item-cells">${elem.price}</td>
                       <td className="Cart-item-buttons">
                         <button
                           className="Cart-button"
@@ -83,7 +83,7 @@ export default function Cart() {
                         </button>
                       </td>
                       <td className="Cart-item-cells">
-                        ₹{elem.price * cartItems[elem.id]}
+                        ${elem.price * cartItems[elem.id]}
                       </td>
                     </tr>
                   );
@@ -94,7 +94,7 @@ export default function Cart() {
           </div>
           <div className="Cart-div-right">
             <div className="Cart-order-value">
-              Subtotal({items} item{items > 1 && "s"}): ₹{orderValue}
+              Subtotal({items} item{items > 1 && "s"}): ${orderValue}
             </div>
             <div className="Cart-order-value">
               <button onClick={submitOrder} className="Cart-place-order">

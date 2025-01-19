@@ -22,7 +22,7 @@ export default function Products() {
               {value.desc}
             </p>
             <div className="priceBtn">
-              <div className="priceTxt">₹{value.price}</div>
+              <div className="priceTxt">${value.price}</div>
               <div className="Product-button">
                 <AddButton id={value.id} />
               </div>
